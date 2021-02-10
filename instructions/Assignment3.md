@@ -1,10 +1,7 @@
-# Assignment 3: Paxos-based Key/Value Service
-### Part A Due: Wednesday Oct 28, 11:59:59pm
-### Part B Due: Thursday Nov 5, 11:59:59pm
-
+#  Paxos-based Key/Value Service
 ### Introduction
 
-Your Assignment 2 depends on a single master view server to pick the primary.
+The previous part depends on a single master view server to pick the primary.
 If the view server is not available (crashes or has network problems),
 then your key/value service won't work, even if both primary and
 backup are available. It also has the less critical defect that it
