@@ -1,10 +1,8 @@
-# Assignment 4: Sharded Key/Value Service
-### Part A Due: Wednesday Nov 18, 11:59:59pm
-### Part B Due: Wednesday Dec 2, 11:59:59pm
+# Sharded Key/Value Service
 
 ### Introduction
 
-In this assignment you'll build a key/value storage system that
+In this part you'll build a key/value storage system that
 "shards" or partitions the keys over a set of replica groups. A
 shard is a subset of the key/value pairs; for example, all the keys
 starting with "a" might be one shard, all the keys starting with "b"
