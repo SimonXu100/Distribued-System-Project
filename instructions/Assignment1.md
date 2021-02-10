@@ -1,5 +1,4 @@
-# Assignment 1: MapReduce
-### Due: Wednesday Sep 23, 11:59:59pm
+#  MapReduce
 
 ### Introduction
 
