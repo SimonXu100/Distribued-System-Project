@@ -7,35 +7,9 @@ because the workers don't maintain state. The master does maintain
 state, but you didn't have to make the master fault tolerant. This
 assignment is a first step towards making stateful servers fault tolerant.
 
-### Road map for Assignment 2-4
 
-In the next 3 assignments you will build several key/value
-services. The service supports three RPCs: Put(key, value),
-PutHash(key, value), and Get(key). The service maintains a simple
-database of key/value pairs. Put() updates the value for a particular
-key in the database. PutHash chains all values for a key together,
-which is useful for testing purposes; PutHash stores the hash(old
-value of the key in database, new supplied value) into database, and
-returns the old value. Get() fetches the current value for a key.
-
-These 3 assignments differ in the degree of fault tolerance,
-performance, and scalability they provide for the key/value service:
-
-In all three assignments you will have to do substantial design. We
-give you a sketch of the overall design (and code for the boring
-pieces), but you will have to flesh it out and nail down a complete
-protocol. The test cases test failure scenarios to see if your
-protocol is correct for that scenario. It is likely that some of the
-test cases will point out a flaw in your design and protocol, and you
-may have to redesign your implementation and protocol. Think
-carefully before you start coding so that you can avoid many
-iterations. We don't give you a description of the test cases (other
-than the Go code); in the real world, you would have to come up with
-them yourself.
-
-### Overview of Assignment 2
-
-In this assignment you'll make a key/value service fault-tolerant
+### Overview
+In this part you'll make a key/value service fault-tolerant
 using a form of primary/backup replication. In order to ensure that
 all parties (clients and servers) agree on which server is the
 primary, and which is the backup, we'll introduce a kind of master
