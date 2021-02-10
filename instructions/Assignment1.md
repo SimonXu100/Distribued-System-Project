@@ -11,9 +11,6 @@ interface to the library and the approach to fault tolerance is
 similar to the one described in the original
 [MapReduce paper](http://research.google.com/archive/mapreduce-osdi04.pdf).
 
-### Collaboration Policy
-
-Please refer to Assignment 0.
 
 ### Software
 
