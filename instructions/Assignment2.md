@@ -1,6 +1,4 @@
-# Assignment 2: Primary/Backup Key/Value Service
-### Part A Due: Wednesday Oct 7, 11:59:59pm
-### Part B Due: Wednesday Oct 14, 11:59:59pm
+# Primary/Backup Key/Value Service
 
 ### Introduction
 
