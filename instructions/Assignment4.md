@@ -75,9 +75,6 @@ Paxos agreement; it cannot evolve the sets of peers in each Paxos
 group; its data and query models are very simple; and handoff of
 shards is slow and doesn't allow concurrent client access.
 
-### Collaboration Policy
-
-Please refer to Assignment 0.
 
 ### Software
 
@@ -300,35 +297,3 @@ implementation.
 Hint: Think about when it is okay for a server to give shards to the other
 server during view change.
 
-### Handin procedure
-
-You hand in your assignment as before.
-
-For Part A:
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 4a" a4ahandin
-$ git push origin master
-$ git push origin a4ahandin
-```
-
-For Part B:
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 4b" a4bhandin
-$ git push origin master
-$ git push origin a4bhandin
-```
-
-You should verify that you are able to see your final commit and tags
-on the github page for your repository for this assignment.
-
-You will receive full credit if your software passes the
-<tt>test_test.go</tt> tests when we run your software on our machines.
-We will use the timestamp of your **last** handin tag for the purpose
-of calculating late days and we will only grade that version of the code.
-(We'll also know if you backdate the tag, don't do that.)
-
-### Questions
-
-Please post questions on [Piazza](https://piazza.com/class/keyew99znqn2dl).
