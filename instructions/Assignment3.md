@@ -409,35 +409,3 @@ Hint: When the test fails, check for gob error (e.g. "rpc: writing
 response: gob: type not registered for interface ...") in the log because go
 doesn't consider the error fatal, although it is fatal for the assignment. 
 
-### Handin procedure
-
-You hand in your assignment as before.
-
-For Part A:
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 3a" a3ahandin
-$ git push origin master
-$ git push origin a3ahandin
-```
-
-For Part B:
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 3b" a3bhandin
-$ git push origin master
-$ git push origin a3bhandin
-```
-
-You should verify that you are able to see your final commit and tags
-on the Github page of your repository for this assignment.
-
-You will receive full credit if your software passes the
-<tt>test_test.go</tt> tests when we run your software on our machines.
-We will use the timestamp of your **last** handin tag for the purpose
-of calculating late days and we will only grade that version of the code.
-(We'll also know if you backdate the tag, don't do that.)
-
-### Questions
-
-Please post questions on [Piazza](https://piazza.com/class/keyew99znqn2dl).
