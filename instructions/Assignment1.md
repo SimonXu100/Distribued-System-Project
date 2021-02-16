@@ -250,28 +250,3 @@ workers. Periodically, the test cases start new workers that the
 master can use to make progress, but these workers fail after
 handling a few jobs.
 
-### Handin procedure
-
-You hand in your assignment exactly as you've been letting us know
-your progress:
-
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 1" a1handin
-$ git push origin master
-$ git push origin a1handin
-```
-
-You should verify that you are able to see your final commit and your
-a1handin tag on the Github page in your repository for this
-assignment.
-
-You will receive full credit if your software passes the
-<tt>test_test.go</tt> tests when we run your software on our machines.
-We will use the timestamp of your **last** a1handin tag for the
-purpose of calculating late days, and we will only grade that version of the
-code. (We'll also know if you backdate the tag, don't do that.)
-
-### Questions
-
-Please post questions on [Piazza](https://piazza.com/class/keyew99znqn2dl).
