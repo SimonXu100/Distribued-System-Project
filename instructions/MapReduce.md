@@ -12,52 +12,6 @@ similar to the one described in the original
 [MapReduce paper](http://research.google.com/archive/mapreduce-osdi04.pdf).
 
 
-### Software
-
-You'll implement this assignment (and all the assignments) in [Go 1.2 or
-later](http://www.golang.org/). The Go web site contains lots of
-tutorial information which you may want to look at. We supply you with
-a non-distributed MapReduce implementation, and a partial
-implementation of a distributed implementation (just the boring bits).
-
-It's your responsibility to install Go in your development
-environment. We recommend using your distribution's package manager. 
-
-On OS X with [homebrew](http://brew.sh/):
-```bash
-$ brew install go
-```
-
-On Ubuntu/Debian:
-```bash
-$ sudo apt-get install golang
-```
-
-On Arch:
-```bash
-$ sudo pacman -S go
-```
-
-
-### Getting started
-
- There is an input file <tt>kjv12.txt</tt> in src/main, which was
-downloaded from [here](https://web.archive.org/web/20130530223318/http://patriot.net/~bmcgin/kjv12.txt).
-Compile the initial software we provide you with and run it with the downloaded input
-file:
-
-```bash
-$ export GOPATH=$HOME/4113
-$ cd ~/4113/src/main
-$ go run wc.go master kjv12.txt sequential
-# command-line-arguments
-./wc.go:11: missing return at end of function
-./wc.go:15: missing return at end of function
-```
-
-The compiler produces two errors, because the implementation of the
-<tt>Map</tt> and <tt>Reduce</tt> functions is incomplete.
-
 ### Part I: Word count
 
 Modify <tt>Map</tt> and <tt>Reduce</tt> so that <tt>wc.go</tt> reports the
@@ -140,14 +94,6 @@ You can remove the output file and all intermediate files with:
 $ rm mrtmp.*
 ```
 
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 1 part 1" a1p1
-$ git push origin master
-$ git push origin a1p1
-$
-```
-
 ### Part II: Distributing MapReduce jobs
 
 In this part you will design and implement a master who distributes
@@ -211,13 +157,6 @@ understanding of how your code should behave. The last step is most important.
 
 Please let us know that you've gotten this far in the assignment, by
 pushing a tag to github.
-
-```bash
-$ git commit -am "[you fill me in]"
-$ git tag -a -m "i finished assignment 1 part 2" a1p2
-$ git push origin master
-$ git push origin a1p2
-```
 
 ### Part III: Handling worker failures
 
