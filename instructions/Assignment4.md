@@ -75,26 +75,6 @@ Paxos agreement; it cannot evolve the sets of peers in each Paxos
 group; its data and query models are very simple; and handoff of
 shards is slow and doesn't allow concurrent client access.
 
-
-### Software
-
-Do a <tt>git pull</tt> to get the latest assignment software. We supply you
-with new skeleton code and new tests in <tt>src/shardmaster</tt> and
-<tt>src/shardkv</tt>.
-
-```bash
-$ cd ~/4113
-$ git pull
-...
-$ cd src/shardmaster
-$ go test
-Basic leave/join: --- FAIL: TestBasic (0.00 seconds)
-test_test.go:37:    wanted 1 groups, got 0
---- FAIL: TestUnreliable (0.32 seconds)
-test_test.go:37:    wanted 20 groups, got 0
-FAIL
-```
-
 ### Part A: The Shard Master
 
 First you'll implement the shard master, in <tt>shardmaster/server.go</tt>.
