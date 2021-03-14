@@ -54,31 +54,6 @@ The storage system provides sequential consistency to applications that use its 
 
 One consequence of this is that you must ensure that each application call to *Clerk.Put()* must appear in that order just once (i.e., write the key/value database just once), even though internally your client.go may have to send *Put()* and *PutHash()* RPCs multiple times until it finds a kvpaxos server replica that replies due to unreliable network. This will get tricky when Gets and Puts arrive at about the same time as configuration changes.
 
-## Usage
-
-To test the script, navigate to the corresponding folder and set GOPATH before running
-
-`go test`
-
-To run a single test function in the test_test.go file, run
-
-`go test -run FUNCTION_NAME`
-
-To avoid warnings, run 
-
-`go test | egrep -v "keyword1|keyword2|keyword3"`
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
